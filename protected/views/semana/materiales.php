@@ -50,9 +50,9 @@
 
                    	              Promocional<br>
 
-                   	              </span> <img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/promocional_28_14.jpg" width="200" height="100"><br>
+                   	              </span> <img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/promocional_28_21-5.jpg" width="200" height="155"><br>
 
-                   	              <img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/icdescarga_03.png" width="30" height="23"> <span class="piesImg">Archivo: <a href="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/promocional_28_14.jpg" target="_blank">28 x 14 cm</a></span></p>
+                   	              <img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/icdescarga_03.png" width="30" height="23"> <span class="piesImg">Archivo: <a href="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/aplicacion/SDB_2015/Imagenes/promocional_28_21-5.jpg" target="_blank">28 x 21.5 cm</a></span></p>
 
                       	          <p><br>
 
