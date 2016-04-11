@@ -232,6 +232,10 @@
 	}
 	
 	.tit_materiales {
+		color: #C60;
+	}
+	
+	.subtit_materiales {
 		color: #516710;
 	}
 	
@@ -1091,3 +1095,13 @@
 		opacity: 1.0 !important;
 	}
 	
+#logosc {
+	text-align: center;
+	margin-top: 10%;
+}
+
+#logosc li {
+    display: inline;
+    list-style-type: none;
+	padding: 20px 20px 20px 20px;
+}
