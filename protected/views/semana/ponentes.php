@@ -16,17 +16,15 @@ $( "#accordion" ).accordion({
 </script>
 
 
-<!--<h1>Ponentes</h1><br>-->
-<span>Del 21 al 25 de mayo tendremos actividades sobre Nuestra biodiversidad, nuestra alimentación, nuestra salud. <a href="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/programa_9SDB_carta.jpg" target="_blank">Consulta el programa de la 9a. Semana de la Diversidad Biológica</a>
-</span><br><br>
+<h1>Charlas</h1><br>
+
 
 
 <div style="width: 100%; display: ; text-align: center; float:left; display:;">
 
-<p>
-  <a href="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/programa_9SDB_carta.jpg" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/programa_9SDB_carta.jpg" width="100%" alt=""/></a><br>
-  
-</p>
+<iframe width="650" height="368" src="https://www.youtube.com/embed/MRfV56Yb6qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br><br><br>
+<iframe width="650" height="368" src="https://www.youtube.com/embed/1zRUlZtqoNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
