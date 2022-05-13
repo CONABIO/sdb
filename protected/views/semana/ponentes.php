@@ -21,8 +21,8 @@ $( "#accordion" ).accordion({
 
 
 <div style="width: 100%; display: ; text-align: center; float:left; display:;">
-
-<!--<iframe width="650" height="368" src="https://www.youtube.com/embed/MRfV56Yb6qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!--
+<iframe width="650" height="368" src="https://www.youtube.com/embed/MRfV56Yb6qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<br><br><br>
 <iframe width="650" height="368" src="https://www.youtube.com/embed/1zRUlZtqoNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 </div>

@@ -11,5 +11,6 @@ protected/config/main.php
 protected/data/*
 protected/config/main.php_ixmati
 .idea
+._*
+*DS_Store
 imagenes/usuarios/
-.DS_Store
