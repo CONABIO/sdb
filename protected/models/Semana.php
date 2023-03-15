@@ -388,11 +388,10 @@ class Semana extends CActiveRecord
 			'12' => 'Observación de aves',
 			'13' => 'Conversatorio',
 			'14' => 'Presentación de libro',
-			'15' => 'Puertas abiertas',
-			'16' => 'Reforestación',
-			'17' => 'Restauración',
-			'18' => 'Reunión',
-			'19' => 'Visita guiada',
+			'15' => 'Reforestación',
+			'16' => 'Restauración',
+			'17' => 'Reunión',
+			'18' => 'Visita guiada',
 		);
 		asort($actividades);
 		return $posicion == 1000 ? $actividades : $actividades[$posicion];
