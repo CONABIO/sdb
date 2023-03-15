@@ -6,7 +6,7 @@ class UsuariosController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout = '//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -14,8 +14,8 @@ class UsuariosController extends Controller
 	public function filters()
 	{
 		return array(
-				'accessControl', // perform access control for CRUD operations
-				'postOnly + delete', // we only allow deletion via POST request
+			'accessControl', // perform access control for CRUD operations
+			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
 
@@ -28,21 +28,24 @@ class UsuariosController extends Controller
 	public function accessRules()
 	{
 		return array(
-				array('allow',  // allow all users to perform 'index' and 'view' actions
-						'actions'=>array('create'),
-						'users'=>array('*'),
-				),
-				/*array('allow', // allow authenticated user to perform 'create' and 'update' actions
+			array(
+				'allow',  // allow all users to perform 'index' and 'view' actions
+				'actions' => array('create'),
+				'users' => array('*'),
+			),
+			/*array('allow', // allow authenticated user to perform 'create' and 'update' actions
 						'actions'=>array('view', 'update'),
 						'users'=>array('@'),
 				),*/
-				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('index','update','view','admin','delete'),
-						'users'=>array('calonso'),
-				),
-				array('deny',  // deny all users
-						'users'=>array('*'),
-				),
+			array(
+				'allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions' => array('index', 'update', 'view', 'admin', 'delete'),
+				'users' => array('calonso'),
+			),
+			array(
+				'deny',  // deny all users
+				'users' => array('*'),
+			),
 		);
 	}
 
@@ -52,8 +55,8 @@ class UsuariosController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-				'model'=>$this->loadModel($id),
+		$this->render('view', array(
+			'model' => $this->loadModel($id),
 		));
 	}
 
@@ -64,26 +67,25 @@ class UsuariosController extends Controller
 	public function actionCreate()
 	{
 		$this->vigencia();
-		$model=new Usuarios;
+		$model = new Usuarios;
 
 		// Uncomment the following line if AJAX validation is needed
 		//$this->performAjaxValidation($model);
 
-		if(isset($_POST['Usuarios']))
-		{
-			$model->attributes=$_POST['Usuarios'];
-			$model->fec_alta=self::fechaAlta();
+		if (isset($_POST['Usuarios'])) {
+			$model->attributes = $_POST['Usuarios'];
+			$model->fec_alta = self::fechaAlta();
+			$model->fec_act = self::fechaAlta();
 			$model->cual_semana = Yii::app()->params->cual_semana;
-				
-			if($model->save()) 
-			{
+
+			if ($model->save()) {
 				$this->enviaMail($model);
 				$this->redirect(array('/site/login', 'situacion' => 'Tu registro fue creado exitosamente. Por favor ingresa'));
 			}
 		}
 
-		$this->render('create',array(
-				'model'=>$model,
+		$this->render('create', array(
+			'model' => $model,
 		));
 	}
 
@@ -95,28 +97,25 @@ class UsuariosController extends Controller
 	public function actionUpdate($id)
 	{
 		$this->vigencia();
-		if (Yii::app()->user->id_usuario==$id)
-		{
-			$model=$this->loadModel($id);
+		if (Yii::app()->user->id_usuario == $id) {
+			$model = $this->loadModel($id);
 
 			// Uncomment the following line if AJAX validation is needed
 			// $this->performAjaxValidation($model);
 
-			if(isset($_POST['Usuarios']))
-			{
-				$model->attributes=$_POST['Usuarios'];
-				$model->fec_act=self::fechaAlta();
+			if (isset($_POST['Usuarios'])) {
+				$model->attributes = $_POST['Usuarios'];
+				$model->fec_act = self::fechaAlta();
 
-				if($model->save())
-					$this->redirect(array('view','id'=>$model->id));
+				if ($model->save())
+					$this->redirect(array('view', 'id' => $model->id));
 			}
 
-			$this->render('update',array(
-					'model'=>$model,
+			$this->render('update', array(
+				'model' => $model,
 			));
-
 		} else {
-			throw new CHttpException(404,'No tienes permisos para realizar esa acción.');
+			throw new CHttpException(404, 'No tienes permisos para realizar esa acción.');
 		}
 	}
 
@@ -130,7 +129,7 @@ class UsuariosController extends Controller
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
+		if (!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
@@ -139,9 +138,9 @@ class UsuariosController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Usuarios');
-		$this->render('index',array(
-				'dataProvider'=>$dataProvider,
+		$dataProvider = new CActiveDataProvider('Usuarios');
+		$this->render('index', array(
+			'dataProvider' => $dataProvider,
 		));
 	}
 
@@ -150,13 +149,13 @@ class UsuariosController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Usuarios('search');
+		$model = new Usuarios('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Usuarios']))
-			$model->attributes=$_GET['Usuarios'];
+		if (isset($_GET['Usuarios']))
+			$model->attributes = $_GET['Usuarios'];
 
-		$this->render('admin',array(
-				'model'=>$model,
+		$this->render('admin', array(
+			'model' => $model,
 		));
 	}
 
@@ -169,9 +168,9 @@ class UsuariosController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Usuarios::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+		$model = Usuarios::model()->findByPk($id);
+		if ($model === null)
+			throw new CHttpException(404, 'The requested page does not exist.');
 		return $model;
 	}
 
@@ -181,18 +180,17 @@ class UsuariosController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='usuarios-form')
-		{
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'usuarios-form') {
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
 
-	private function enviaMail ($model)
+	private function enviaMail($model)
 	{
-		$nombre_ap = '<b>Nombre: </b>'.$model->nombre.' '.$model->apellido.'<br>';
-		$email = '<b>Correo: </b>'.$model->email.'<br>';
-		$msj = $nombre_ap.$email;
+		$nombre_ap = '<b>Nombre: </b>' . $model->nombre . ' ' . $model->apellido . '<br>';
+		$email = '<b>Correo: </b>' . $model->email . '<br>';
+		$msj = $nombre_ap . $email;
 		$subject = "Nueva cuenta";
 		$to = 'sdb@conabio.gob.mx';
 		$header  = "MIME-Version: 1.0\r\n";
