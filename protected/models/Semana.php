@@ -280,7 +280,10 @@ class Semana extends CActiveRecord
 		//final de las validaciones
 		if ($valido && $this->isNewRecord) {
 			$this->fec_alta = Controller::fechaAlta();
+			$this->fec_act = Controller::fechaAlta();
 			$this->cual_semana = Yii::app()->params->cual_semana;
+		} else {
+			$this->fec_act = Controller::fechaAlta();
 		}
 
 		$this->materiales = $materiales;
@@ -304,15 +307,23 @@ class Semana extends CActiveRecord
 					if (!file_exists($path . $mod->usuarios_id))
 						mkdir($path . $mod->usuarios_id);
 
-					if ($mod->isNewRecord)
+					if ($mod->isNewRecord) {
 						$model = new Materiales();
-					else {
+						$model->fec_alta = Controller::fechaAlta();
+						$model->fec_act = Controller::fechaAlta();
+					} else {
 						$anterior = Materiales::model()->findByAttributes(array('semana_id' => $mod->id, 'numero_material' => $mat));
-						if (isset($anterior->id))
+
+						if (isset($anterior->id)) {
 							$model = $anterior;
-						else
+							$model->fec_act = Controller::fechaAlta();
+						} else {
 							$model = new Materiales();
+							$model->fec_alta = Controller::fechaAlta();
+							$model->fec_act = Controller::fechaAlta();
+						}
 					}
+
 					$fecha = date("Y-m-d_H-i-s");
 					$identificador = $fecha . '_';
 					$model->nombre = $archivo->getName();
@@ -320,7 +331,6 @@ class Semana extends CActiveRecord
 					$model->peso = $peso;
 					$model->cadena = $identificador;
 					$model->ruta = $url . $mod->usuarios_id . '/' . $identificador . $archivo;
-					$model->fec_alta = Controller::fechaAlta();
 					$model->numero_material = $mat;
 
 					return array('valido' => true, 'con' => true, 'model' => $model, 'path' => $path . $this->usuarios_id . '/' . $identificador . $archivo, 'archivo' => $archivo);
@@ -449,6 +459,6 @@ class Semana extends CActiveRecord
 		if ($logo)
 			return array('image/jpg', 'image/jpeg', 'image/png', 'image/gif');
 		else
-			return array('image/jpg', 'image/jpeg', 'application/pdf');
+			return array('image/jpg', 'image/jpeg', 'image/png', 'image/gif', 'application/pdf');
 	}
 }

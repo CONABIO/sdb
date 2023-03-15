@@ -78,7 +78,7 @@
 <h3>Materiales disponibles:</h3>
 <?php
 foreach ($model_materiales as $k => $material) {
-	if ($material->formato == "image/jpeg")
+	if ($material->formato != "application/pdf")
 		echo CHtml::image($material->ruta, $material->nombre, array('width' => 150)) . '<br>' . CHtml::link('Ver imagen', $material->ruta, array('style' => 'color:#009BB7', 'target' => '_blank'));
 	if ($material->formato == "application/pdf")
 		echo CHtml::link($material->nombre, $material->ruta, array('target' => '_blank', 'style' => 'color:#009BB7'));
