@@ -1164,3 +1164,10 @@ a:hover, a:active {
 		opacity: 1.0 !important;
 	}
 
+#semana-grid table thead tr th {
+	color: white;
+	background-color: #9caca7!important;
+	background: none;
+	text-align: center;
+}
+
