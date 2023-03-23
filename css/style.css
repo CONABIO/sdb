@@ -9,8 +9,8 @@
 */
 
 :root {
-	--mainColor: #074c80;
-	--subColor: #0571be;
+	--mainColor: #078057;
+	--subColor: #3d8767;
 }
 
 /* Basic */
@@ -56,13 +56,13 @@ a {
 
 a:hover, a:active {
 	border-bottom-color: transparent;
-	color: #7ba4dc !important;
+	color: #688377 !important;
 	text-decoration: none;
 }
 
 
 #aagro a {
-	color: #6b94c8 !important;
+	color: #45a27e !important;
 }
 
 #aganaderia a {
@@ -74,7 +74,7 @@ a:hover, a:active {
 }
 
 #aagro hr {
-	border-bottom: solid 5px #1b549c;
+	border-bottom: solid 5px #078057;
 }
 
 #aganaderia hr {

@@ -1,23 +1,17 @@
-<p>Es el tema propuesto por el Convenio de Diversidad Biológica de la celebración del <strong><a href="https://www.cbd.int/biodiversity-day" target="_blank">Día Internacional de la Diversidad Biológica</a></strong> 22 de mayo de 2022 y para nosotros el tema del mes de mayo.</p>
+<h3>Día Internacional de la Madre Tierra</h3>
+<h4>“Porque compartimos un mismo origen y un mismo hogar: la Madre Tierra”</h4>
+<p>&nbsp;</p>
 
-<p>Desde 2020 terminamos con la Semana de la Diversidad Biológica (2011-2019) e iniciamos celebrando todo un mes <strong>“Mayo, mes de la naturaleza mexicana”</strong>.</p>
+  <a href="https://www.gob.mx/sep" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/logo_educacion.svg" height="83"/></a>&nbsp;&nbsp;
+  
+  <a href="https://www.gob.mx/conabio" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/Logo_Semarnat-Conabio_2023.svg" height="83"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<p>En 2021, la Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT) y la Secretaría de Educación Pública (SEP) firmaron el <a href="https://www.gob.mx/semarnat%7Ceducacionambiental/articulos/convenio-de-colaboracion-semarnat-sep?idiom=es" target="_blank">convenio de colaboración</a> para desarrollar programas de educación ambiental para la sustentabilidad en instituciones educativas oficiales y particulares de nivel básico, medio superior y superior (respetando su régimen jurídico y autonomía), así como en las diferentes modalidades y opciones educativas. </p>
+
+<p><a href="https://www.gob.mx/semarnat/educacionambiental/es/videos/semarnat-en-coordinacion-con-la-sep-impulsan-la-educacion-ambiental-en-las-escuelas" target="_blank">Conmemoración de días clave para el cuidado del medio ambiente</a>.</p>
 
 <p>Únete a celebrar en: escuelas, organizaciones de la sociedad civil, universidades, municipios, ejidos, comunidades y promueve el conocimiento de la riqueza natural de México a través de charlas, conferencias, videos, salidas a playas, parques, arroyos, conciertos, manualidades, etc.</p>
 
-<p>Para participar en esta celebración, sugerimos los siguientes temas:</p>
-
-<ul>
-	<li>•	¿Qué puedo hacer para reducir mi <a href="https://www.biodiversidad.gob.mx/biodiversidad/que_hacer" target="_blank">huella ecológica</a>?</li>
-	<li>Consume responsablemente</li>
-	<li>Conoce y consume de prácticas sostenibles de <a href="https://www.biodiversidad.gob.mx/diversidad/alimentos/consumidor-responsable" target="_blank">agricultura, ganadería y pesca</a></li>
-	<li>Conoce la situación de <a href="https://www.biodiversidad.gob.mx/diversidad/alimentos/peces/" target="_blank">peces y mariscos</a> y consume las opciones sostenibles</li>
-	<li>Promueve el <a href="https://www.biodiversidad.gob.mx/diversidad/sistemas-productivos/turismo" target="_blank">turismo sustentable</a></li>
-	<li>Conoce las especies de tu <a href="https://enciclovida.mx/explora-por-region?utf8=%E2%9C%93&pagina=1#5/25.026/-81.079" target="_blank">municipio y de las áreas protegidas</a></li>
-	<li>Ayuda a los <a href="https://biodiversidad.gob.mx/ecosistemas/procesose/polinizacion/" target="_blank">polinizadores</a></li>
-	<li>Participa en <a href="https://www.biodiversidad.gob.mx/cienciaciudadana/" target="_blank">ciencia ciudadana</a></li>
-</ul>
-
-<p>Durante <strong>Mayo: mes de la naturaleza mexicana</strong>, como en los años anteriores, la Comisi&oacute;n Nacional para el Conocimiento y Uso de la  Biodiversidad <span class="conabio">(Conabio)</span> te invita a participar utilizando los matriales que hemos seleccionado y subiendo <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=semana/admin">actividades en línea al calendario nacional de la página</a>.</p>
+<p>Las actividades de celebración del día internacional de la Madre Tierra <strong>(22 de abril)</strong> se llevarán a cabo del <strong>15 al 23 de abril</strong>. Durante esta semana te invitamos a participar utilizando los materiales que hemos seleccionado y subiendo actividades en línea al calendario nacional de la página.</p>
 
 <center>
 <h4><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=usuarios/create">¡Súmate y participa desde tu estado!</a> | 
@@ -42,33 +36,14 @@ Rosario Castellanos</a><br><br>
 </p>
 
 <p><strong>Además…</strong></p>
-<p><strong>2022</strong> es año internacional</p>
+<p><strong>2023</strong> es año internacional</p>
 <ul>
-	<li>del <a href="https://iyrp.info/international-year-sustainable-mountain-development-iysmd-2022" target="_blank">Desarrollo Sostenible en las Montañas</a></li>
-	<li>de las <a href="https://www.iybssd2022.org/en/home/" target="_blank">Ciencias Básicas por el Desarrollo</a> Sostenible</li>
-	<li>de las <a href="https://www.fao.org/artisanal-fisheries-aquaculture-2022/home/es/" target="_blank">Pesquerías y Acuacultura Artesanales</a></li>
-	<li>y del <a href="https://iyog2022.org/" target="_blank">Vidrio</a></li>
+  <li><a href="https://www.fao.org/millets-2023/es" target="_blank">Año Internacional del Mijo</a></li>
+  <li><a href="https://www.afs-intercultura.org/2023-ano-internacional-del-dialogo-como-garantia-de-paz/" target="_blank">Año Internacional del Diálogo como Garantía de Paz</a></li>
 </ul>
-<center>
-<a href="https://iyrp.info/international-year-sustainable-mountain-development-iysmd-2022" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/logo-IYSMD.jpeg" height="84"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
 
-<a href="https://www.iybssd2022.org/en/home/" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/Logo-ss-titre-degrade.png" height="85"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-<a href="https://www.fao.org/artisanal-fisheries-aquaculture-2022/home/es/" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/HP_desktop_IYAFA_ES.jpg" height="85"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-<a href="https://iyog2022.org/" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/77-iyog-2022-logo.png" width="178" height="59"/></a>
-</center>
-
-<br><br>
-<p>En 2021 se inició la <a href="https://www.decadeonrestoration.org/es" target="_blank">Década de las Naciones Unidas de la Restauración de los Ecosistemas</a> el 5 de junio y la <a href="https://www.oceandecade.org/" target="_blank">Década de las Naciones Unidas de las Ciencias Oceánicas para el Desarrollo Sostenible</a>.</p>
-<p>Y se adoptó el <strong>Marco Global de Biodiversidad Post 2020</strong> en la <a href="https://www.cbd.int/meetings/COP-15" target="_blank">15º reunión de la Conferencia de las Partes</a> en Kunming, China del 11 al 24 de octubre.</p>
-
-
-<center>
-<a href="https://www.gob.mx/conabio" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/logo_conabio.png" width="178" height="59"/></a>&nbsp;&nbsp;
-	
-<a href="https://www.cbd.int/idb/2020/" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/logo_DIDB.png" width="216" height="84"/></a>
-</center>
+  
+<p>&nbsp;</p>
                         
 </section>
 

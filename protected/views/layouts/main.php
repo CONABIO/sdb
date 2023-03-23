@@ -48,7 +48,8 @@ function MM_swapImage() { //v3.0
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 
-<title>Mayo: mes de la naturaleza mexicana | Biodiversidad Mexicana | CONABIO</title>
+<title>D&iacute;a Internacional de la Madre Tierra</title>
+<link rel="shortcut icon" href="https://www.biodiversidad.gob.mx/media/1/favicon.ico">
 <meta property="og:image" content="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/mayo-mes-naturaleza-mexicana.jpg"/>
 
 
@@ -57,6 +58,16 @@ function MM_swapImage() { //v3.0
 <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
 <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style-xlarge.css" />
 </noscript>
+	
+	<!-- Google Analytics tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7GSRKLE6X5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7GSRKLE6X5');
+</script>
 
 </head>
 
@@ -74,10 +85,7 @@ function MM_swapImage() { //v3.0
 <!-- One -->
 	<section id="one">
 	  <header class="major">
-		  <h6 align="right">
-			  <a href="https://www.biodiversidad.gob.mx" target="_blank">Biodiversidad Mexicana</a>&nbsp;-&nbsp;Mayo: mes de la naturaleza mexicana <b>| <a href="https://www.biodiversidad.gob.mx/cienciaciudadana/SDB" target="_blank">Semanas anteriores</a></b>
-		  </h6>
-		  <a href="<?php echo Yii::app()->request->baseUrl; ?>" class="image avatar"><h4 class="verde">Inicio</h4></a>
+		  <a href="<?php echo Yii::app()->request->baseUrl; ?>" class="image avatar"><h3 class="verde">Inicio</h3></a>
 			<!--<h2>&nbsp;</h2>
 			<a href="<?php echo Yii::app()->request->baseUrl; ?>" class="image avatar"><h2 class="verde">9a. Semana de la Diversidad Biol&oacute;gica</h2></a><br>
 			<span class="slogan">Nuestra biodiversidad, nuestra alimentaci&oacute;n, nuestra salud</span>
@@ -111,20 +119,6 @@ function MM_swapImage() { //v3.0
 </div>
 
 <!-- Footer -->
-
-		<!-- C\357\277\275digo para estad\357\277\275sticas en Google Analytics -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-8226401-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
-<!-- Fin del c\357\277\275digo para estad\357\277\275sticas en Google Analytics -->
-
 
 </body>
 </html>                         
