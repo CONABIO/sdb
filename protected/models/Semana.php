@@ -404,10 +404,12 @@ class Semana extends CActiveRecord
 			'2' => 'Educación Básica Primaria',
 			'3' => 'Educación Básica Secundaria',
 			'4' => 'Educación Continua',
-			'5' => 'Educación Media Superior',
-			'6' => 'Escuela Normal',
-			'7' => 'Público General',
-			'8' => 'Universidad intercultural',
+			'5' => 'Educación Especial',
+			'6' => 'Educación Superior',
+			'7' => 'Escuela Normal',
+			'8' => 'Público General',
+			'9' => 'Universidad intercultural',
+			'10' => 'CONAFE',
 		);
 
 		asort($publico_meta);
