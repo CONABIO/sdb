@@ -26,7 +26,7 @@ Usuarios extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Usuarios the static model class
 	 */
-	public static function model($className=__CLASS__)
+	public static function model($className = __CLASS__)
 	{
 		return parent::model($className);
 	}
@@ -47,14 +47,14 @@ Usuarios extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-				array('email, passwd, nombre, apellido, difusion', 'required'),
-				array('roles_id', 'numerical', 'integerOnly'=>true),
-				array('email, passwd, nombre, apellido, difusion', 'length', 'max'=>255),
-				//valida el email
-				//array('email','email'),
-				// The following rule is used by search().
-				// Please remove those attributes that should not be searched.
-				array('id, email, passwd, nombre, apellido, difusion, fec_alta, fec_act, roles_id', 'safe', 'on'=>'search'),
+			array('email, passwd, nombre, apellido, difusion', 'required'),
+			array('roles_id', 'numerical', 'integerOnly' => true),
+			array('email, passwd, nombre, apellido, difusion', 'length', 'max' => 255),
+			//valida el email
+			//array('email','email'),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id, email, passwd, nombre, apellido, difusion, fec_alta, fec_act, roles_id', 'safe', 'on' => 'search'),
 		);
 	}
 
@@ -66,7 +66,7 @@ Usuarios extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'roles' => array(self::BELONGS_TO, 'Roles', 'roles_id'),
+			'roles' => array(self::BELONGS_TO, 'Roles', 'roles_id'),
 		);
 	}
 
@@ -76,15 +76,15 @@ Usuarios extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-				'id' => 'Id',
-				'email' => 'Correo',
-				'passwd' => 'Contraseña',
-				'nombre' => 'Nombre (s)',
-				'apellido' => 'Apellido (s)',
-				'fec_alta' => 'Fecha registro',
-				'fec_act' => 'Fecha ultima actualización',
-				'roles_id' => 'Roles',
-				'difusion' => '¿Cómo te enteraste de Mayo: mes de la naturaleza mexicana?',
+			'id' => 'Id',
+			'email' => 'Correo',
+			'passwd' => 'Contraseña',
+			'nombre' => 'Nombre (s)',
+			'apellido' => 'Apellido (s)',
+			'fec_alta' => 'Fecha registro',
+			'fec_act' => 'Fecha ultima actualización',
+			'roles_id' => 'Roles',
+			'difusion' => '¿Cómo te enteraste de Mayo: mes de la naturaleza mexicana?',
 		);
 	}
 
@@ -94,19 +94,14 @@ Usuarios extends CActiveRecord
 	 */
 	public function beforeValidate()
 	{
-		if (!$this->solo_passwd)
-		{
-			if (!empty($this->email)) 
-			{
-				if ($this->validaCorreo($this->email))
-				{
-					$emails = Usuarios::findAllByAttributes(array('email'=>$this->email), array('order' => 'cual_semana DESC'), array('limit' => 1));
-				
-					foreach ($emails as $email)
-					{
-						if (isset($email->id)) 
-						{
-							$this->addError('email', 'El correo '.$this->email." ya existe en nuestra base, si no recuerdas tu contrase&ntilde;a sigue el siguiente <a href=\"".Yii::app()->request->baseUrl."/index.php?r=site/recupera\">enlace</a>");
+		if (!$this->solo_passwd) {
+			if (!empty($this->email)) {
+				if ($this->validaCorreo($this->email)) {
+					$emails = Usuarios::findAllByAttributes(array('email' => $this->email), array('order' => 'cual_semana DESC'), array('limit' => 1));
+
+					foreach ($emails as $email) {
+						if (isset($email->id)) {
+							$this->addError('email', 'El correo ' . $this->email . " ya existe en nuestra base, si no recuerdas tu contrase&ntilde;a sigue el siguiente <a href=\"" . Yii::app()->request->baseUrl . "/index.php?r=site/recupera\">enlace</a>");
 							return false;
 						}
 					}
@@ -116,7 +111,6 @@ Usuarios extends CActiveRecord
 				}
 			}
 			return parent::beforeValidate();
-			
 		} else {
 			if (empty($this->difusion))
 				$this->difusion = 'ND';
@@ -133,20 +127,20 @@ Usuarios extends CActiveRecord
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('passwd',$this->passwd,true);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('fec_alta',$this->fec_alta,true);
-		$criteria->compare('fec_act',$this->fec_act,true);
-		$criteria->compare('roles_id',$this->roles_id);
-		$criteria->compare('difusion',$this->difusion,true);
+		$criteria->compare('id', $this->id);
+		$criteria->compare('email', $this->email, true);
+		$criteria->compare('passwd', $this->passwd, true);
+		$criteria->compare('nombre', $this->nombre, true);
+		$criteria->compare('apellido', $this->apellido, true);
+		$criteria->compare('fec_alta', $this->fec_alta, true);
+		$criteria->compare('fec_act', $this->fec_act, true);
+		$criteria->compare('roles_id', $this->roles_id);
+		$criteria->compare('difusion', $this->difusion, true);
 
 		return new CActiveDataProvider($this, array(
-				'criteria'=>$criteria,
+			'criteria' => $criteria,
 		));
 	}
 
@@ -158,32 +152,31 @@ Usuarios extends CActiveRecord
 		else
 			return false;
 	}
-	
+
 	public function send_mail()
 	{
 		$imagen = "<table width=\"990\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
-		$imagen.= "<tbody><tr><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
-		$imagen.= "<img	src=\"".Yii::app()->request->baseUrl.'/imagenes/pagina/10-mayo-mes-naturaleza-mexicana.jpg'."\" width=\"707\">";
-		$imagen.= "</td></tr></tbody></table>";
-		$para = $this->email.", sbd@conabio.gob.mx";
-		$titulo = "9a. Semana de la Diversidad Biol&oacute;gica";
-		$mensaje = $imagen."<br><br>".$this->nombre.' '.$this->apellido.",";
-		$mensaje.= "<br><br>Para poder poner una nueva contrase&ntilde;a sigue el siguiente ";
-		$mensaje.= "<a href=\"https://www.biodiversidad.gob.mx/mesnaturaleza/index.php?r=site/reset&id=".$this->id."&fec_alta=".urlencode($this->fec_alta)."\" target=\"_blank\">enlace</a>.";
-		$cabeceras = "Content-type: text/html; charset=utf-8"."\r\n";
-		$cabeceras.= "From: noreply@conabio.gob.mx"."\r\n";
+		$imagen .= "<tbody><tr><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
+		$imagen .= "<img src=\"" . Yii::app()->request->baseUrl . '/imagenes/pagina/' . Yii::app()->imagen_principal . "\" width=\"707\">";
+		$imagen .= "</td></tr></tbody></table>";
+		$para = $this->email . ", sbd@conabio.gob.mx";
+		$titulo = Yii::app()->name;
+		$mensaje = $imagen . "<br><br>" . $this->nombre . ' ' . $this->apellido . ",";
+		$mensaje .= "<br><br>Para poder poner una nueva contrase&ntilde;a sigue el siguiente ";
+		$mensaje .= "<a href=\"" . Yii::app()->request->baseUrl . "/index.php?r=site/reset&id=" . $this->id . "&fec_alta=" . urlencode($this->fec_alta) . "\" target=\"_blank\">enlace</a>.";
+		$cabeceras = "Content-type: text/html; charset=utf-8" . "\r\n";
+		$cabeceras .= "From: noreply@conabio.gob.mx" . "\r\n";
 		mail($para, $titulo, $mensaje, $cabeceras);
 	}
-	
+
 	public static function difusiones()
 	{
-		return array
-		(
-				'Redes sociales' => 'Redes sociales',
-				'Medios impresos' => 'Medios impresos',
-				'Radio' => 'Radio',
-				'Televisión' => 'Televisión',
-				'Otros' => 'Otros'
+		return array(
+			'Redes sociales' => 'Redes sociales',
+			'Medios impresos' => 'Medios impresos',
+			'Radio' => 'Radio',
+			'Televisión' => 'Televisión',
+			'Otros' => 'Otros'
 		);
 	}
 }
