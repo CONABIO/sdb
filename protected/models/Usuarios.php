@@ -157,7 +157,7 @@ Usuarios extends CActiveRecord
 	{
 		$imagen = "<table width=\"990\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">";
 		$imagen .= "<tbody><tr><td width=\"790\" align=\"center\" bgcolor=\"#FFFFFF\">";
-		$imagen .= "<img src=\"" . Yii::app()->request->baseUrl . '/imagenes/pagina/' . Yii::app()->imagen_principal . "\" width=\"707\">";
+		$imagen .= "<img src=\"" . Yii::app()->request->baseUrl . '/imagenes/pagina/' . Yii::app()->params->imagen_principal . "\" width=\"707\">";
 		$imagen .= "</td></tr></tbody></table>";
 		$para = $this->email . ", sbd@conabio.gob.mx";
 		$titulo = Yii::app()->name;

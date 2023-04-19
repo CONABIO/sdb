@@ -8,7 +8,6 @@
 return array(
 	'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
 	'name' => '#a. Semana de la Biodiversidad Biológica',
-	'imagen_principal' => 'nombre.jpg',
 	'defaultController' => 'semana/inicio',
 	'homeUrl' => array('semana/inicio'),
 
@@ -122,6 +121,8 @@ return array(
 		// this is used in contact page
 		'adminEmail' => 'calonso@conabio.gob.mx',
 		'cual_semana' => '#',
+		# La imagen que llevará cuando se manden correos
+		'imagen_principal' => 'nombre.jpg',
 		// Las fechas entre las cuales la plataforma será visible para registrarse y subir actividades
 		'fecha_inicio_sdb' => '20170427115900',
 		'fecha_termino_sdb' => '20170531235900',
