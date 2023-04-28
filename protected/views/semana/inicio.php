@@ -1,27 +1,39 @@
-<h3>Día Internacional de la Madre Tierra</h3>
-<h4>“Porque compartimos un mismo origen y un mismo hogar: la Madre Tierra”</h4>
-<p>&nbsp;</p>
-
-<a href="https://www.gob.mx/sep" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/logo_educacion.svg" height="83" /></a>&nbsp;&nbsp;
-
-<a href="https://www.gob.mx/conabio" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/Logo_Semarnat-Conabio_2023.svg" height="83" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<p>En 2021, la Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT) y la Secretaría de Educación Pública (SEP) firmaron el <a href="https://www.gob.mx/semarnat%7Ceducacionambiental/articulos/convenio-de-colaboracion-semarnat-sep?idiom=es" target="_blank">convenio de colaboración</a> para desarrollar programas de educación ambiental para la sustentabilidad en instituciones educativas oficiales y particulares de nivel básico, medio superior y superior (respetando su régimen jurídico y autonomía), así como en las diferentes modalidades y opciones educativas, con el objetivo de dar seguimiento a programas y acciones de educación ambiental para la sustentabilidad.</p>
+<h2>Mayo, mes de la naturaleza mexicana</h2>
+<h3>“Acciones por nuestra naturaleza y cultura”</h3>
+<br>
+<center>
+<a href="https://www.gob.mx/conabio" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/Logo_Semarnat-Conabio_2023.svg" height="83" /></a></center>
+<br>
+<p>Este es el gran tema para celebrar <strong>Mayo, mes de la naturaleza mexicana</strong>, iniciado desde 2020, para darle continuidad a la Semana de la Diversidad Biológica (2011-2019). </p>
 
 <p>
-  Una de las áreas de cooperación es la celebración de los <strong>días clave para el cuidado del medio ambiente</strong>, para promover la reflexión en las comunidades educativas sobre la importancia de fortalecer lazos de identidad nacional y comunitaria y valorar y defender el patrimonio biocultural de México, por ejemplo, a través de la realización de eventos de divulgación.
+  La riqueza natural y cultural de México es extraordinaria y queremos promover las <strong>acciones</strong> para valorar y conservar nuestro patrimonio biocultural.   
 </p>
 
 <p>
-  En ese sentido, invitamos a participar a las comunidades educativas organizando eventos de divulgación. Únete a las celebraciones, crea redes y organizarte a través de escuelas, con organizaciones de la sociedad civil, universidades, municipios, ejidos, comunidades y promueve el conocimiento de la riqueza natural de México a través de charlas, conferencias, videos, salidas a playas, parques, arroyos, conciertos, manualidades, etc.
+  <strong>Celebra acciones</strong> dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana.
 </p>
 
 <p>
-  Las actividades de celebración del día internacional de la Madre Tierra <strong>(22 de abril)</strong> se llevarán a cabo del <strong>15 de abril al 12 de mayo</strong>. Durante esta semana te invitamos a participar utilizando los materiales que hemos seleccionado y subiendo actividades en línea al calendario nacional de la página.
+  De seguro conoces <strong>acciones</strong> para valorar y conservar nuestras tradiciones de cocina, de herbolaria, del uso de fibras y colorantes naturales, de plantas ornamentales, de prácticas agrícolas tradicionales como la milpa, las chinampas, los metepantles, las terrazas que forman paisajes culturales, de especies de gran valor espiritual y ceremonial y de usos y costumbres, tradiciones orales, arte, ideas y cultura recibidas y transmitidas por generaciones.
 </p>
+<p>
+  Únete a celebrar en: escuelas, organizaciones de la sociedad civil, universidades, municipios, ejidos, comunidades y promueve el conocimiento de la riqueza natural de México a través de charlas, conferencias, videos, salidas a playas, parques, arroyos, conciertos, manualidades, etc.
+</p>
+<p>Puedes visitar: </p>
 
+<ul>
+<li>¿Cuál es nuestro <a href="https://www.biodiversidad.gob.mx/diversidad/patrimonio-biocultural" target="_blank">patrimonio biocultural</a>?</li>
+<li>¿Cuál es el patrimonio biocultural de <a href="https://enciclovida.mx/explora-por-region?utf8=%E2%9C%93&pagina=1#5/25.026/-79.519" target="_blank">tu municipio</a>?</li>
+<li>¿Qué acciones deberíamos tomar para valorar, conservar y restaurar nuestro <a href="https://www.biodiversidad.gob.mx/diversidad/patrimonio-biocultural" target="_blank">patrimonio biocultural?</a></li>
+<li>Participa en <a href="https://www.biodiversidad.gob.mx/cienciaciudadana/" target="_blank">ciencia ciudadana</a></li>
+</ul>
+
+<p>Durante Mayo: mes de la naturaleza mexicana, como en los años anteriores, la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO) te invita a participar utilizando los materiales que hemos seleccionado y subiendo <a href="https://www.biodiversidad.gob.mx/mesnaturaleza/index.php?r=semana/admin">actividades en línea al calendario nacional de la página.</a>
+</p>
 <center>
   <h4>
-    <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=semana/create">Publica y comparte tus actividades virtuales</a>
+    <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=semana/create">¡Súmate y participa desde tu estado! | Publica y comparte tus actividades virtuales</a>
   </h4>
   <br>
 </center>
@@ -48,10 +60,19 @@ Rosario Castellanos</a><br><br>
   <li><a href="https://www.fao.org/millets-2023/es" target="_blank">Año Internacional del Mijo</a></li>
   <li><a href="https://www.afs-intercultura.org/2023-ano-internacional-del-dialogo-como-garantia-de-paz/" target="_blank">Año Internacional del Diálogo como Garantía de Paz</a></li>
 </ul>
+<center>
+<a href="https://www.fao.org/millets-2023/es" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/2023_AIMijo.jpg" height="100" /></a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.afs-intercultura.org/2023-ano-internacional-del-dialogo-como-garantia-de-paz/" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/2023_AIDGPaz.jpg" height="100" /></a>
+</center>
+<br>
 
-
-<p>&nbsp;</p>
-
+<p>En 2021 se inició la <a href="https://www.decadeonrestoration.org/es" target="_blank">Década de las Naciones Unidas de la Restauración de los Ecosistemas</a> el 5 de junio y la <a href="https://oceandecade.org/" target="_blank">Década de las Naciones Unidas de las Ciencias Oceánicas para el Desarrollo Sostenible.</a>
+Y se adoptó el <strong>Marco Global de Biodiversidad Post 2020</strong> en la <a href="https://www.cbd.int/meetings/COP-15" target="_blank">15º reunión de la Conferencia de las Partes</a> en Kunming, China del 11 al 24 de octubre.
+</p>
+<br>
+<center>
+<a href="https://www.cbd.int/article/idb2023" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/2023_DelAcuerdo_Accion.jpg" height="100" /></a>
+</center>
 </section>
 
 <!-- Two -->
