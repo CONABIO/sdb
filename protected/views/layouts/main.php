@@ -73,7 +73,7 @@
 
 	<title><?php echo Yii::app()->name; ?></title>
 	<link rel="shortcut icon" href="https://www.biodiversidad.gob.mx/media/1/favicon.ico">
-	<meta property="og:image" content="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/mayo-mes-naturaleza-mexicana.jpg" />
+	<meta property="og:image" content="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/<?php echo Yii::app()->params->imagen_principal; ?>" />
 
 
 	<noscript>
