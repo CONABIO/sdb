@@ -36,7 +36,7 @@
 	  <a href="https://www.paismaravillas.mx/memoramas.html" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/juego_memorama.png" width="157" height="160"></a>
 	  <a href="https://www.paismaravillas.mx/color_selvah.html" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/juego_iluminar.png" width="184" height="160"></a><br><br>
 	  <a href="https://www.paismaravillas.mx/encuentra.html" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/juego_encuentra.png" width="163" height="160"></a>
-	  <a href="https://www.paismaravillas.mx/assets/pdf/descargables/cuidasodestruyes.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/juego_cuidad_D.png" width="253" height="160"></a>
+	  <a href="https://www.paismaravillas.mx/assets/pdf/descargables/cuidasodestruyes.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/juego_cuidas.png" width="253" height="160"></a>
 	  <a href="https://www.paismaravillas.mx/recortables.html" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/recorta.png" width="205" height="160"></a>
 	<br><br>
 	  
