@@ -18,18 +18,18 @@
   De seguro conoces <strong>acciones</strong> para valorar y conservar nuestras tradiciones de cocina, de herbolaria, del uso de fibras y colorantes naturales, de plantas ornamentales, de prácticas agrícolas tradicionales como la milpa, las chinampas, los metepantles, las terrazas que forman paisajes culturales, de especies de gran valor espiritual y ceremonial y de usos y costumbres, tradiciones orales, arte, ideas y cultura recibidas y transmitidas por generaciones.
 </p>
 <p>
-  Únete a celebrar en: escuelas, organizaciones de la sociedad civil, universidades, municipios, ejidos, comunidades y promueve el conocimiento de la riqueza natural de México a través de charlas, conferencias, videos, salidas a playas, parques, arroyos, conciertos, manualidades, etc.
+  Únete a celebrar en: escuelas, organizaciones de la sociedad civil, universidades, municipios, ejidos, comunidades y promueve el conocimiento de la riqueza natural de México a través de charlas, conferencias, videos, conciertos, manualidades y salidas a playas, parques, arroyos,  etc.
 </p>
-<p>Puedes visitar: </p>
+<p>Visita y conoce: </p>
 
 <ul>
 <li>¿Cuál es nuestro <a href="https://www.biodiversidad.gob.mx/diversidad/patrimonio-biocultural" target="_blank">patrimonio biocultural</a>?</li>
 <li>¿Cuál es el patrimonio biocultural de <a href="https://enciclovida.mx/explora-por-region?utf8=%E2%9C%93&pagina=1#5/25.026/-79.519" target="_blank">tu municipio</a>?</li>
-<li>¿Qué acciones deberíamos tomar para valorar, conservar y restaurar nuestro <a href="https://www.biodiversidad.gob.mx/diversidad/patrimonio-biocultural" target="_blank">patrimonio biocultural?</a></li>
+<li><a href="https://biodiversidad.gob.mx/biodiversidad/que_hacer" target="_blank">¿Qué puedo hacer</a> para valorar, conservar y restaurar nuestro patrimonio biocultural?</li>
 <li>Participa en <a href="https://www.biodiversidad.gob.mx/cienciaciudadana/" target="_blank">ciencia ciudadana</a></li>
 </ul>
 
-<p>Durante Mayo: mes de la naturaleza mexicana, como en los años anteriores, la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO) te invita a participar utilizando los materiales que hemos seleccionado y subiendo <a href="https://www.biodiversidad.gob.mx/mesnaturaleza/index.php?r=semana/admin">actividades en línea al calendario nacional de la página.</a>
+<p>Durante Mayo mes de la naturaleza mexicana, como en los años anteriores, la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO) te invita a participar utilizando los materiales que hemos seleccionado y subiendo <a href="https://www.biodiversidad.gob.mx/mesnaturaleza/index.php?r=semana/admin">actividades en línea al calendario nacional de la página.</a>
 </p>
 <center>
   <h4>
