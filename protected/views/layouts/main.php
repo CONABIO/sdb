@@ -16,8 +16,21 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="<?php echo Yii::app()->name; ?>" />
 	<meta property="og:description" content="<?php echo "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>" />
-	<meta property="og:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/back_page-01.jpg"; ?>" />
-	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("sdb/", "", Yii::app()->request->url); ?>" />
+	<meta property="og:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/" . Yii::app()->params->imagen_principal; ?>" />
+
+	<?php
+	// $url_array = explode("/", Yii::app()->request->url);
+	// array_pop($url_array);
+	// $url = implode("/", $url_array);
+	//echo Yii::app()->getBaseUrl(true) . "-" . Yii::app()->request->url;
+	?>
+
+	<?php //print_r($url_array); 
+	?>
+	<?php //echo $url . "-" . Yii::app()->request->url; 
+	?>
+
+	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("mesnaturaleza/", "", Yii::app()->request->url); ?>" />
 	<meta property="og:site_name" content="<?php echo Yii::app()->name; ?>" />
 
 	<!-- Twitter -->
