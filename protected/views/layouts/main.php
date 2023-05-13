@@ -10,7 +10,25 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="keywords" content="naturaleza,mes,mayo,biodiversidad" />
+
+	<!-- OpenGraph-->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="<?php echo Yii::app()->name; ?>" />
+	<meta property="og:description" content="<?php echo "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>" />
+	<meta property="og:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/back_page-01.jpg"; ?>" />
+	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("sdb/", "", Yii::app()->request->url); ?>" />
+	<meta property="og:site_name" content="<?php echo Yii::app()->name; ?>" />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	</meta>
+	<meta name="twitter:title" content="<?php echo Yii::app()->name; ?>">
+	<meta name="twitter:description" content="<?php echo "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>">
+	<meta name="twitter:site" content="@CONABIO">
+	<meta name="twitter:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/back_page-01.jpg"; ?>">
+	<meta name="twitter:creator" content="@CONABIO">
+
 	<!--[if lte IE 8]><script src="<?php echo Yii::app()->request->baseUrl; ?>/css/ie/html5shiv.js"></script><![endif]-->
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/jquery.poptrox.min.js"></script>
@@ -75,7 +93,6 @@
 	<link rel="shortcut icon" href="https://www.biodiversidad.gob.mx/media/1/favicon.ico">
 	<meta property="og:image" content="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/<?php echo Yii::app()->params->imagen_principal; ?>" />
 
-
 	<noscript>
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/skel.css" />
 		<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
@@ -98,7 +115,6 @@
 </head>
 
 <body>
-
 	<!-- Header -->
 	<header id="header">
 		<!--<a href="<?php echo Yii::app()->request->baseUrl; ?>" class="image avatar"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/imgCirculo.png" alt="" /></a>
@@ -143,7 +159,7 @@
 				| <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=site/logout">Cerrar sesión</a>
 			<?php } ?>
 			<?php echo $content; ?>
-
+			<?php echo Yii::app()->getBaseUrl(true); ?>
 	</div>
 
 	<!-- Footer -->
