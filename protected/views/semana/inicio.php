@@ -32,6 +32,11 @@
 <p>Durante Mayo mes de la naturaleza mexicana, como en los años anteriores, la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO) te invita a participar utilizando los materiales que hemos seleccionado y subiendo <a href="https://www.biodiversidad.gob.mx/mesnaturaleza/index.php?r=semana/admin">actividades en línea al calendario nacional de la página.</a>
 </p>
 <center>
+  <h4>Promocional</h4>
+<!-- Linea -->
+<hr>
+
+<iframe width="60%" height="260" src="https://www.youtube.com/embed/cvU6njeQBxM" frameborder="0" allowfullscreen=""></iframe>	
   <h4>
     <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=semana/create">¡Súmate y participa desde tu estado! | Publica y comparte tus actividades virtuales</a>
   </h4>
