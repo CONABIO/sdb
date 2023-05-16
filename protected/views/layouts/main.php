@@ -1,45 +1,34 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-MX" lang="es-MX">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="naturaleza,mes,mayo,biodiversidad" />
+
+	<?php $descripcion = "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>
+	<?php $img_redes = Yii::app()->getBaseUrl(true) . "/imagenes/pagina/redes.jpg"; ?>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">	
+	<meta name="description" content=<?php echo $descripcion; ?>>
+	<meta name="keywords" content="naturaleza, mes, mayo, biodiversidad">
 
 	<!-- OpenGraph-->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="<?php echo Yii::app()->name; ?>" />
-	<meta property="og:description" content="<?php echo "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>" />
-	<meta property="og:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/" . Yii::app()->params->imagen_principal; ?>" />
-
-	<?php
-	// $url_array = explode("/", Yii::app()->request->url);
-	// array_pop($url_array);
-	// $url = implode("/", $url_array);
-	//echo Yii::app()->getBaseUrl(true) . "-" . Yii::app()->request->url;
-	?>
-
-	<?php //print_r($url_array); 
-	?>
-	<?php //echo $url . "-" . Yii::app()->request->url; 
-	?>
-
-	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("mesnaturaleza/", "", Yii::app()->request->url); ?>" />
-	<meta property="og:site_name" content="<?php echo Yii::app()->name; ?>" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="<?php echo Yii::app()->name; ?>">
+	<meta property="og:description" content="<?php echo $descripcion; ?>">
+	<meta property="og:image" content="<?php echo $img_redes; ?>">
+	<meta property="og:image:url" content="<?php echo $img_redes; ?>">
+	<meta property="og:image:secure_url" content="<?php echo $img_redes; ?>">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="400">
+	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("mesnaturaleza/", "", Yii::app()->request->url); ?>">
+	<meta property="og:site_name" content="<?php echo Yii::app()->name; ?>">
+	<meta property="og:locale" content="es_MX">
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
-	</meta>
 	<meta name="twitter:title" content="<?php echo Yii::app()->name; ?>">
-	<meta name="twitter:description" content="<?php echo "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>">
+	<meta name="twitter:description" content="<?php echo $descripcion; ?>">
 	<meta name="twitter:site" content="@CONABIO">
-	<meta name="twitter:image" content="<?php echo Yii::app()->getBaseUrl(true) . "/imagenes/pagina/back_page-01.jpg"; ?>">
+	<meta name="twitter:image" content="<?php echo $img_redes; ?>">
 	<meta name="twitter:creator" content="@CONABIO">
 
 	<!--[if lte IE 8]><script src="<?php echo Yii::app()->request->baseUrl; ?>/css/ie/html5shiv.js"></script><![endif]-->
@@ -169,7 +158,7 @@
 			</p>
 			<?php if (!Yii::app()->user->isGuest) { ?>
 				<a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=semana/index">Ver tus eventos</a>
-				| <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=site/logout">Cerrar sesión</a>
+				| <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php?r=site/logout">Cerrar sesiÃ³n</a>
 			<?php } ?>
 			<?php echo $content; ?>
 			<?php echo Yii::app()->getBaseUrl(true); ?>
