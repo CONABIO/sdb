@@ -3,7 +3,7 @@
 <head>
 
 	<?php $descripcion = "La riqueza natural y cultural de México es extraordinaria y queremos promover las acciones para valorar y conservar nuestro patrimonio biocultural. Celebra acciones dirigidas a conservar el conocimiento y prácticas ecológicas locales, la riqueza biológica asociada, los paisajes culturales, la herencia, memoria y prácticas vivas que nos hacen parte de la naturaleza mexicana."; ?>
-	<?php $img_redes = Yii::app()->getBaseUrl(true) . "/imagenes/pagina/redes.jpg"; ?>
+	<?php $img_redes = Yii::app()->getBaseUrl(true) . "/imagenes/pagina/redes.png"; ?>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">	
 	<meta name="description" content=<?php echo $descripcion; ?>>
@@ -16,7 +16,7 @@
 	<meta property="og:image" content="<?php echo $img_redes; ?>">
 	<meta property="og:image:url" content="<?php echo $img_redes; ?>">
 	<meta property="og:image:secure_url" content="<?php echo $img_redes; ?>">
-	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="600">
 	<meta property="og:image:height" content="400">
 	<meta property="og:url" content="<?php echo Yii::app()->getBaseUrl(true) . str_replace("mesnaturaleza/", "", Yii::app()->request->url); ?>">
