@@ -21,8 +21,8 @@ $( "#accordion" ).accordion({
 <img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/ic_foto.png" width="25" height="22" /> <span class="tit_materiales">Invitación y programa</span>
 	<!-- Linea -->
 	<hr/>	
-	<p><a href="https://www.biodiversidad.gob.mx/mesnaturaleza/imagenes/pagina/MMNat_invitacion_MNA.jpg" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/MMNat_invita22_MNA_peq.jpg" width="300" height="191"></a>
-	  <br>
+	<p><a href="https://www.biodiversidad.gob.mx/mesnaturaleza/imagenes/pagina/MMNat_invitacion_MNA.jpg" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/MMNat_invita22_MNA_peq.jpg" width="300" height="191"></a> 
+	   <a href="https://www.biodiversidad.gob.mx/media/1/conabio/files/Programa_MayoMesNat4_gral-cambio.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/progGral_MNM2023_web.jpg" width="144" height="191"></a> <a href="https://www.biodiversidad.gob.mx/media/1/conabio/files/ProgramaNinos_MayoMNat2023.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/pActNinos_MNM2023_web.jpg" width="187" height="191"></a><br>
 </p>
 	<p><br>
 	  
