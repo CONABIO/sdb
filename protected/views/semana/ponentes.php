@@ -23,25 +23,29 @@ $( "#accordion" ).accordion({
 	<hr/>	
 	<p><a href="https://www.biodiversidad.gob.mx/mesnaturaleza/imagenes/pagina/MMNat_invitacion_MNA.jpg" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/MMNat_invita22_MNA_peq.jpg" width="300" height="191"></a> 
 	   <a href="https://www.biodiversidad.gob.mx/media/1/conabio/files/Programa_MayoMesNat4_gral-cambio.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/progGral_MNM2023_web.jpg" width="144" height="191"></a> <a href="https://www.biodiversidad.gob.mx/media/1/conabio/files/ProgramaNinos_MayoMNat2023.pdf" target="_blank"><img src="<?php echo Yii::app()->request->baseUrl; ?>/imagenes/pagina/pActNinos_MNM2023_web.jpg" width="187" height="191"></a><br>
-</p>
-	<p><br>
-	  
-</p>
-  <h4>Presentación App Enciclovida 2.0</h4>
-<!-- Linea -->
+	</p>
+
+<h4>Mayo, mes de la naturaleza mexicana | Museo Nacional de Antropologia</h4>
 <hr>
-
-<iframe width="50%" height="235" src="https://www.youtube.com/embed/T5rhfWyxFR8" frameborder="0" allowfullscreen=""></iframe>	
-  <p>Conoce las nuevas funciones de esta increíble aplicación que incluye información de la flora y la fauna de México.</p>
-  <br>
+<iframe width="400" height="225" src="https://www.youtube.com/embed/videoseries?list=PLLAcoRHqCmNSn6fLP-wZgOpCUYuruHiWV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
 
 
-<div style="width: 100%; display: ; text-align: center; float:left; display:;">
-<!--
-<iframe width="650" height="368" src="https://www.youtube.com/embed/MRfV56Yb6qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<br><br><br>
-<iframe width="650" height="368" src="https://www.youtube.com/embed/1zRUlZtqoNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-</div>
+                 
+
+<h4>&nbsp;</h4>
+<h4>Presentación App Enciclovida 2.0</h4>
+<hr>
+<table border="0" width="800px">
+            <tr>
+				<td width="395"><iframe width="100%" height="200" src="https://www.youtube.com/embed/AwGyLkZZbgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+				Presentación Enciclovida - Dr. Carlos Galindo Leal</td>
+
+				<td width="395"><iframe width="100%" height="200" src="https://www.youtube.com/embed/T5rhfWyxFR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                Promocional
+                  </p></td>
+  </tr>
+</table>
+
 
 
 
